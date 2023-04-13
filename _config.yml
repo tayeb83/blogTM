@@ -28,6 +28,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: http://tayeb83.github.com
 twitter_username: jekyllrb
 github_username:  jekyll
+remote_theme: jekyll-theme-bootstrap-rtl
 
 # Build settings
 #theme: jekyll-theme-bootstrap-rtl
