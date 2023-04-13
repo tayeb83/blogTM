@@ -27,6 +27,7 @@ platforms :mingw, :x64_mingw, :mswin, :jruby do
 end
 
 gem 'jekyll-theme-bootstrap-rtl', '~> 0.1.4.4'
+gem 'jekyll-archives'
 gem 'jekyll-date-localization', group: :jekyll_plugins
 
 # Performance-booster for watching directories on Windows

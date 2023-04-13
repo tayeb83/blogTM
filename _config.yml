@@ -33,8 +33,18 @@ github_username:  jekyll
 theme: jekyll-theme-bootstrap-rtl
 plugins:
   - jekyll-feed
+  - jekyll-archives
   - date
 
+jekyll-archives:
+  enabled: all
+  layout: archive
+  permalinks:
+    year: '/archives/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/tag/:name/'
+    category: '/category/:name/'
 
 date_locale: ar
 lang: ar
