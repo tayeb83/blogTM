@@ -1,3 +1,17 @@
+GIT
+  remote: https://github.com/radmanesh/jekyll-theme-bootstrap-rtl.git
+  revision: 98aeb1b815cb2fb12b98b7393f3c00a52e3f58e0
+  specs:
+    jekyll-theme-bootstrap-rtl (0.1.4.4)
+      jekyll (~> 3.5)
+      jekyll-default-layout (~> 0.1)
+      jekyll-hinduarabic (~> 0.1)
+      jekyll-jalali (~> 0.1)
+      jekyll-paginate (~> 1)
+      jekyll-seo-tag (~> 2)
+      jekyll-sitemap (~> 1)
+      jekyll-tagging-related_posts (~> 1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -48,15 +62,6 @@ GEM
       jekyll (>= 3.7, < 5.0)
     jekyll-tagging-related_posts (1.2.0)
       jekyll (>= 3.9, < 5.0)
-    jekyll-theme-bootstrap-rtl (0.1.4.4)
-      jekyll (~> 3.5)
-      jekyll-default-layout (~> 0.1)
-      jekyll-hinduarabic (~> 0.1)
-      jekyll-jalali (~> 0.1)
-      jekyll-paginate (~> 1)
-      jekyll-seo-tag (~> 2)
-      jekyll-sitemap (~> 1)
-      jekyll-tagging-related_posts (~> 1)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
     kramdown (2.4.0)
@@ -92,7 +97,7 @@ DEPENDENCIES
   jekyll-archives
   jekyll-date-localization
   jekyll-feed (~> 0.12)
-  jekyll-theme-bootstrap-rtl (~> 0.1.4.4)
+  jekyll-theme-bootstrap-rtl!
   kramdown-parser-gfm
   tzinfo (>= 1, < 3)
   tzinfo-data
