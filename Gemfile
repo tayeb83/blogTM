@@ -31,7 +31,7 @@ platforms :mingw, :x64_mingw, :mswin, :jruby do
 end
 
 #gem 'jekyll-theme-bootstrap-rtl', '~> 0.1.4.4'
-gem 'jekyll-theme-bootstrap-rtl', :git => 'https://github.com/radmanesh/jekyll-theme-bootstrap-rtl.git'
+#gem 'jekyll-theme-bootstrap-rtl', :git => 'https://github.com/radmanesh/jekyll-theme-bootstrap-rtl.git'
 gem 'jekyll-archives'
 gem 'jekyll-date-localization', group: :jekyll_plugins
 
