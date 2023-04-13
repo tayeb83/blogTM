@@ -1,0 +1,26 @@
+/* Iranian Sans Web font as 'AlHurra Sans' */
+@font-face {
+  font-family: 'AlHurra Sans';
+  //src: url( $assets-dir + '/fonts/iransans.eot'); /* for IE */
+  src: url( $assets-dir + '/fonts/Alhurra.ttf') format('truetype');
+  //src: local('Iranian Sans'), url('/assets/fonts/iransans.woff') format('woff'), url('/assets/fonts/iransans.svgz') format('svg'), url('/assets/fonts/iransans.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AlHurra Sans';
+  src: local('AlHurra Sans'), url($assets-dir + '/fonts/Alhurra.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Titr';
+  src: local('Titr'), url($assets-dir + '/fonts/BTitrBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@import "font-awesome.min.css";

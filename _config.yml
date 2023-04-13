@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
+title: مدونة الطيب الضادي
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -30,9 +30,14 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
-theme: minima
+theme: jekyll-theme-bootstrap-rtl
 plugins:
   - jekyll-feed
+  - date
+
+
+date_locale: ar
+lang: ar
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -42,7 +47,8 @@ plugins:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
+exclude:
+    - jekyll-jalali
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/
