@@ -18,6 +18,8 @@ gem "jekyll", "~> 3.5"
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
+  gem "jekyll-date-localization"
+  gem "jekyll-archives"
   #gem "github-pages"
 end
 
@@ -32,8 +34,7 @@ end
 
 #gem 'jekyll-theme-bootstrap-rtl', '~> 0.1.4.4'
 #gem 'jekyll-theme-bootstrap-rtl', :git => 'https://github.com/radmanesh/jekyll-theme-bootstrap-rtl.git'
-gem 'jekyll-archives'
-gem 'jekyll-date-localization', group: :jekyll_plugins
+
 
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
