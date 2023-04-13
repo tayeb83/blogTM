@@ -26,7 +26,7 @@ platforms :mingw, :x64_mingw, :mswin, :jruby do
   gem "tzinfo-data"
 end
 
-gem "jekyll-theme-bootstrap-rtl"
+gem "jekyll-theme-bootstrap-rtl", "~> 3.0"
 gem 'jekyll-date-localization', group: :jekyll_plugins
 
 # Performance-booster for watching directories on Windows
