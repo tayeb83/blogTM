@@ -8,7 +8,7 @@ layout: default
     {% if paginator %}
     {% for post in paginator.posts %}
     <li>
-      <span class="post-meta"><span class="date">{{ post.date | localize: "%A %d %b %Y" | habify }}</span></span>
+      <span class="post-meta"><span class="date">{% assign dy = post.date | date: "%a" %}{% case dy %}{% when "Mon" %}الإثنين{% when "Tue" %}الثلاثاء{% when "Wed" %}الأربعاء{% when "Thu" %}الخميس{% when "Fri" %}الجمعة{% when "Sat" %}السبت{% when "Sun" %}الأحد{% else %}{{ dy }}{% endcase %} {% assign d = post.date | date: "%-d"  %}{% case d %}{% when '1' %}{{ d }}er{% else %}{{ d }}{% endcase %} {% assign m = post.date | date: "%-m" %}{% case m %}{% when '1' %}يناير{% when '2' %}فبراير{% when '3' %}مارس{% when '4' %}أبريل{% when '5' %}مايو{% when '6' %}يونيو{% when '7' %}يوليو{% when '8' %}أغسطس{% when '9' %}سبتمبر{% when '10' %}أكتوبر{% when '11' %}نوفمبر{% when '12' %}ديسمبر{% endcase %} {{ post.date | date: '%Y' }}</span></span>
       <h2 class="post-title"><a class="post-link" href="{{ post.url | absolute_url }}">{{ post.title }}</a> </h2>
       {{ post.content | strip_html | truncatewords: 35 }}
     </li>
@@ -16,7 +16,7 @@ layout: default
     {% else %}
     {% for post in site.posts %}
     <li>
-      <span class="post-meta"><span class="date">{{ post.date | localize: "%A %d %b %Y" | habify }}</span></span>
+      <span class="post-meta"><span class="date">{% assign dy = post.date | date: "%a" %}{% case dy %}{% when "Mon" %}الإثنين{% when "Tue" %}الثلاثاء{% when "Wed" %}الأربعاء{% when "Thu" %}الخميس{% when "Fri" %}الجمعة{% when "Sat" %}السبت{% when "Sun" %}الأحد{% else %}{{ dy }}{% endcase %} {% assign d = post.date | date: "%-d"  %}{% case d %}{% when '1' %}{{ d }}er{% else %}{{ d }}{% endcase %} {% assign m = post.date | date: "%-m" %}{% case m %}{% when '1' %}يناير{% when '2' %}فبراير{% when '3' %}مارس{% when '4' %}أبريل{% when '5' %}مايو{% when '6' %}يونيو{% when '7' %}يوليو{% when '8' %}أغسطس{% when '9' %}سبتمبر{% when '10' %}أكتوبر{% when '11' %}نوفمبر{% when '12' %}ديسمبر{% endcase %} {{ post.date | date: '%Y' }}</span></span>
       <h2><a class="post-link" href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
       {{ post.content | strip_html | truncatewords: 35 }}
     </li>
