@@ -20,7 +20,7 @@ jobs:
           
       - name: setup git config
         run: |
-          git config user.name "tayeb83"
+          git config user.name "Tayeb MERABTI"
           git config user.email "tayeb.merabti@gmail.com"          
 
       - name: commit
